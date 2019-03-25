@@ -1,0 +1,28 @@
+<div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{song.artworkUrl100}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ song.trackName}}</h5>
+        <p class="card-text">{{ song.collectionName}}</p>
+        <div *ngIf="!song.favorite">
+            <a class="icon" (click)="selectFavorite(song)">
+                <mat-icon>favorite_border</mat-icon>
+            </a>
+          </div>
+        <div *ngIf="song.favorite">
+            <a class="icon" (click)="selectFavorite(song)">
+                <mat-icon >favorite</mat-icon>
+              </a>
+          </div>
+      </div>
+</div>
+<!-- <mat-card class="example-card">
+    <img mat-card-image src="{{song.artworkUrl100}}" alt="Photo of a Shiba Inu">
+    <mat-card-title>{{ song.trackName }}</mat-card-title>
+    <mat-card-content>
+      <p>
+          {{ song.collectionName }}
+      </p>
+    </mat-card-content>
+  </mat-card> -->
+  
+  

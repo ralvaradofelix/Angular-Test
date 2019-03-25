@@ -1,0 +1,11 @@
+<div id="navbarSupportedContent" class="searchDiv">
+    <div class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" (keyup)="searchArtist($event.target.value)" type="search" placeholder="Search" aria-label="Search" />
+      <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2"><mat-icon>search</mat-icon></span>
+        </div>
+    </div>
+</div>
+<div class="fav">
+    <mat-icon class="menuIcon" matBadge="{{ favoritesNumber }}" matBadgeColor="warn" >favorite</mat-icon>
+</div>
