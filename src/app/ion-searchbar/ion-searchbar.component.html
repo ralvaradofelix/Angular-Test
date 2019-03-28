@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
-        <div id="navbarSupportedContent" class="searchDiv col-sm-11 col-10">
+        <div id="navbarSupportedContent" class="searchDiv col-sm-11 col-10 col-md-10 col-lg-10 col-xl-10">
             <div class="form-group row">
-                <div class="input-group col-sm-4">
+                <div class="input-group col-sm-12 col-md-6 col-lg-4 col-xl-4">
                     <input class="form-control" (keyup)="searchArtist($event.target.value)" type="search" placeholder="Search" aria-label="Search" />
                     <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2"><mat-icon>search</mat-icon></span>
@@ -10,7 +10,7 @@
                 </div>
             </div>
         </div>
-        <div class="fav col-sm-1 col-1">
+        <div class="fav col-sm-1 col-1 col-md-1 col-lg-1 col-xl-1">
             <mat-icon class="menuIcon" matBadge="{{ favoritesNumber }}" matBadgeColor="warn" >favorite</mat-icon>
         </div>
     </div>
