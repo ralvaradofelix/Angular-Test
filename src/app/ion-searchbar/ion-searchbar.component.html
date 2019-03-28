@@ -1,11 +1,17 @@
-<div id="navbarSupportedContent" class="searchDiv">
-    <div class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" (keyup)="searchArtist($event.target.value)" type="search" placeholder="Search" aria-label="Search" />
-      <div class="input-group-append">
-          <span class="input-group-text" id="basic-addon2"><mat-icon>search</mat-icon></span>
+<div class="container">
+    <div class="row">
+        <div id="navbarSupportedContent" class="searchDiv col-sm-11 col-10">
+            <div class="form-group row">
+                <div class="input-group col-sm-4">
+                    <input class="form-control" (keyup)="searchArtist($event.target.value)" type="search" placeholder="Search" aria-label="Search" />
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><mat-icon>search</mat-icon></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fav col-sm-1 col-1">
+            <mat-icon class="menuIcon" matBadge="{{ favoritesNumber }}" matBadgeColor="warn" >favorite</mat-icon>
         </div>
     </div>
-</div>
-<div class="fav">
-    <mat-icon class="menuIcon" matBadge="{{ favoritesNumber }}" matBadgeColor="warn" >favorite</mat-icon>
 </div>

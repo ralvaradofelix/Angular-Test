@@ -1,8 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
 <mat-toolbar id="basic">
-  <mat-icon svgIcon="gesture-double-tap"></mat-icon>
-  <app-ion-searchbar class="toolbar"></app-ion-searchbar>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 col-2 col-md-2 col-lg-2 col-xl-2">
+            <mat-icon svgIcon="gesture-double-tap"></mat-icon>
+        </div>
+        <div class="col-sm-10 col-10 col-md-10 col-lg-10 col-xl-10">
+            <app-ion-searchbar class="toolbar"></app-ion-searchbar>
+        </div>
+    </div>
+  </div>
 </mat-toolbar>
-<app-songs class="order-songs"></app-songs>
-<router-outlet></router-outlet>
+<div class="container">
+    <div class="row">
+        <app-songs class="order-songs"></app-songs>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
